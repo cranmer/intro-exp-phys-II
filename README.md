@@ -23,9 +23,11 @@ If there are updates that you want to get:
 1. If it is, then make sure you are on your `master` branch with `git branch`. 
 If you aren't you need to check it out with `git checkout master`
 Now you are ready to update:
-```git fetch cranmer master
+```
+git fetch cranmer master
 git merge cranmer/master
 ```
+
 Now you should have the up-to-date repository.
 
 
