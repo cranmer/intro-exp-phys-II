@@ -3,9 +3,7 @@
 * Kyle Cranmer 
 
 
-This is a GitHub repository to accompany Intro to Exp Phys II.
-
-See [lecture1-in-class-demo.ipynb](lecture1-in-class-demo.ipynb)
+This is a GitHub repository to accompany Intro to Exp Phys II. Click on the notebooks.
 
 Run the notebooks from within your browser without installing anything thanks to [Binder](http://mybinder.org)
 
@@ -32,7 +30,8 @@ Now you should have the up-to-date repository.
 
 
 1. On your computer you should make a new branch if you want to play aroud
-```git branch play
+```
+git branch play
 git checkout play
 ```
 now you can make changes without conflicting with the `master` branch.
