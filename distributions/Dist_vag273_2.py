@@ -2,7 +2,7 @@
 import numpy as np
 from base_distribution import BaseDistribution
 
-class Dist_vag273(BaseDistribution):
+class Dist_vag273_2(BaseDistribution):
 	def __init__(self):
 		self.f_max = 2/np.sqrt(pi)
 		self.x_min = 0
