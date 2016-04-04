@@ -11,7 +11,7 @@ class Dist_yr595(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return 2/np.pi * np.sqrt(1-x**2)
+		return 2/np.PI * np.sqrt(1-x**2)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
