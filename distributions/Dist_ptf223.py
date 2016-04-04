@@ -4,22 +4,22 @@ from base_distribution import BaseDistribution
 
 class Dist_ptf223(BaseDistribution):
 	def __init__(self):
-		self.f_max = 14
-		self.x_min = -1
-		self.x_max = 1
+		self.f_max = 10
+		self.x_min = 0
+		self.x_max = 10
 
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.abs(x)
+		return 5*np.sin(x/2*np.pi)**2
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.
+		return (self.x_max+self.x_min)/2
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(0.5)
+		return np.sqrt(4.6225)
 
 
 def test(cls):
