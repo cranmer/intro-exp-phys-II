@@ -2,9 +2,9 @@
 import numpy as np
 from base_distribution import BaseDistribution
 
-class Dist_kc90(BaseDistribution):
+class Dist_ptf223(BaseDistribution):
 	def __init__(self):
-		self.f_max = 1
+		self.f_max = 14
 		self.x_min = -1
 		self.x_max = 1
 
@@ -44,4 +44,4 @@ def test(cls):
 		print("%s has errors't work" %(cls.__name__))
 
 if __name__ == '__main__':
-	test(Dist_kc90)
+	test(Dist_ptf223)
