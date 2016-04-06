@@ -3,9 +3,6 @@
 import numpy as np
 from base_distribution import BaseDistribution
 
-# intentional misspelling to avoid syntax errors
-lamda = 4.
-
 class Dist_psa251(BaseDistribution):
     # Exponentional distribution
     #
@@ -14,18 +11,20 @@ class Dist_psa251(BaseDistribution):
     #
 
     def __init__(self):
+        self.lamda = 4.
+
         self.x_min = 0.
         self.x_max = 1.
-        self.f_max = lamda
+        self.f_max = self.lamda
 
     def pdf(self, x):
-        return lamda * np.exp((-1.) * lamda * x)
+        return self.lamda * np.exp((-1.) * self.lamda * x)
 
     def mean(self):
-        return (1./lamda)
+        return (1./self.lamda)
 
     def std(self):
-        return np.sqrt(1./(lamda**2))
+        return np.sqrt(1./(self.lamda**2))
 
 # def test(cls):
 # 	try:
