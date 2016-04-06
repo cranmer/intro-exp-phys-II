@@ -11,7 +11,7 @@ class Dist_nj18(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return (pow(x, 2) + 1/6)
+		return (pow(x, 2) + 1./6.)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
