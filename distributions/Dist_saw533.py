@@ -15,11 +15,11 @@ class Dist_saw533(BaseDistribution):
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.33333333333333
+		return 1./3
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(0.22222222222)
+		return np.sqrt(2./9)
 
 
 def test(cls):
