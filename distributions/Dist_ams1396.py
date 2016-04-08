@@ -10,7 +10,7 @@ class Dist_ams1396(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return (5*x^11)
+		return (5*(x**11))
 
 	def mean(self):
 		"""This is the mean of the PDF"""
@@ -18,7 +18,7 @@ class Dist_ams1396(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return (.000244140625) 
+		return ((5./14)*(((dist.x_max)**14) - ((dist.x_min)**14))) 
 
 
 def test(cls):
