@@ -2,24 +2,24 @@
 import numpy as np
 from base_distribution import BaseDistribution
 
-class Dist_ptf223(BaseDistribution):
+class Dist_dl3185(BaseDistribution):
 	def __init__(self):
-		self.f_max = 10
-		self.x_min = 0
-		self.x_max = 10
+		self.f_max = 1
+		self.x_min = -1
+		self.x_max = 1
 
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return 5*np.sin(x/2*np.pi)**2
+		return x**2
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return (self.x_max+self.x_min)/2
+		return 0
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(4.6225)
+		return np.sqrt(0.4)
 
 
 def test(cls):
@@ -44,4 +44,4 @@ def test(cls):
 		print("%s has errors't work" %(cls.__name__))
 
 if __name__ == '__main__':
-	test(Dist_ptf223)
+	test(Dist_dl3185)
