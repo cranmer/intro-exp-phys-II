@@ -11,7 +11,7 @@ class Dist_dl3185(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return x^2
+		return x**2
 
 	def mean(self):
 		"""This is the mean of the PDF"""
