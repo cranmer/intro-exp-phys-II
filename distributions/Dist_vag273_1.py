@@ -19,4 +19,4 @@ class Dist_vag273_1(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(1./12)
+		return np.sqrt(1./48)
