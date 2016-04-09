@@ -6,9 +6,9 @@ Center for Soft Matter Research to determine flatness.'''
 
 class Dist_jgc375(BaseDistribution):
 	def __init__(self):
-		self.f_max = 2161.475
-		self.x_min = 1
-		self.x_max = 1000
+		self.f_max = 0.025
+		self.x_min = 2099.45  
+		self.x_max = 2161.475
 
 
 	def pdf(self, x):
