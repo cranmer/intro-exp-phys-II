@@ -10,7 +10,7 @@ class Dist_ry643(BaseDistribution):
 
     def pdf(self, x):
         """This is your PDF"""
-        return (x**3)/4
+        return (x**3)/4.
 
     def mean(self):
         """This is the mean of the PDF"""
