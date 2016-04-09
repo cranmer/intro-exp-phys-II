@@ -19,4 +19,6 @@ class Dist_nj18(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 1
+		return np.sqrt(23./45.)
+
+
