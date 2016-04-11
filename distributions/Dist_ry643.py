@@ -3,22 +3,23 @@ from base_distribution import BaseDistribution
 
 class Dist_ry643(BaseDistribution):
     def __init__(self):
-        self.f_max = 1
+        self.f_max = 2
         self.x_min = 0
         self.x_max = 2
 
 
     def pdf(self, x):
         """This is your PDF"""
-        return (x**3)/4.
+        return (x**3)/4
 
     def mean(self):
         """This is the mean of the PDF"""
-        return 1
+        return 8./5 #integral (from self.x_min to self.x_max) of x times f(x)
 
     def std(self):
         """This is the standard deviation of the pdf"""
-        return np.sqrt(2)
+        return np.sqrt(8./75)    #integral (from self.x_min to self.x_max) of [(x-mean)**2 times f(x)]
+                                 #sqrt of answer gives std dev.
         
 def test(cls):
 	try:
