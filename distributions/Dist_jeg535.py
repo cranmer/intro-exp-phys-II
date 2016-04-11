@@ -11,7 +11,7 @@ class Dist_jeg535(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.abs(x+7.2)
+		return np.cos(x)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
