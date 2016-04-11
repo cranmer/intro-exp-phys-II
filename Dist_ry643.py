@@ -14,11 +14,11 @@ class Dist_ry643(BaseDistribution):
 
     def mean(self):
         """This is the mean of the PDF"""
-        return 1
+        return 1.535841
 
     def std(self):
         """This is the standard deviation of the pdf"""
-        return np.sqrt(2)
+        return 0.330426
         
 def test(cls):
 	try:
