@@ -18,7 +18,7 @@ class Dist_ih646(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 2.862767
+		return 2.882767
 
 
 def test(cls):
