@@ -15,11 +15,12 @@ from Dist_ac5790 import Dist_ac5790
 from Dist_ams1396 import Dist_ams1396
 from Dist_dl3185 import Dist_dl3185
 from Dist_ejk483 import Dist_ejk483
+from Dist_hk1764 import Dist_hk1764
 from Dist_jeg535 import Dist_jeg535
 from Dist_jgc375 import Dist_jgc375
 #from Dist_jgc375_2 import Dist_jgc375
 from Dist_jsg549 import Dist_jsg549
-from Dist_kc90 import Dist_kc90
+from Dist_kc90 import Dist_hk1764
 from Dist_kc90_2 import Dist_kc90_2
 from Dist_kc90_3 import Dist_kc90_3
 from Dist_kjm538 import Dist_kjm538
@@ -42,15 +43,18 @@ from Dist_yr595 import Dist_yr595
 from Dist_yz2668 import Dist_yz2668
 
 
+
+
 __all__ = ("Dist_ac5790",
 	"Dist_ams1396",
 	"Dist_dl3185",
 	"Dist_ejk483",
+	"Dist_hk1764",
 	"Dist_jeg535",
 	"Dist_jgc375",
 	"Dist_jgc375",
 	"Dist_jsg549",
-	"Dist_kc90",
+	"Dist_hk1764",
 	"Dist_kc90_2",
 	"Dist_kc90_3",
 	"Dist_kjm538",
