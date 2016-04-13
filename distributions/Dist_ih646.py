@@ -1,24 +1,26 @@
 import numpy as np
 from base_distribution import BaseDistribution
+x_min=0
+x_max=1
 
 class Dist_ih646(BaseDistribution):
 	def __init__(self):
-		self.f_max = 30
-		self.x_min = 20
-		self.x_max = 10
+		self.f_max = 3
+		self.x_min = 1
+		self.x_max = 0
 
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return x**3+np.sin(x)+np.cos(x)
+		return 3*(x**2)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 15.
+		return ((x_max)**4)*(0.75)
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 2.882767
+		return np.sqrt((0.6*(x_max**4))-(1.125*(x_max)**3)+(0.5625*(x_max)**2))
 
 
 def test(cls):
