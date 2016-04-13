@@ -5,7 +5,7 @@ from base_distribution import BaseDistribution
 class Dist_jn1348(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
-		self.x_min = np.pi/-2.0
+		self.x_min = 0
 		self.x_max = np.pi/2.0
 
 
