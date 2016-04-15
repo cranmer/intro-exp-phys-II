@@ -18,7 +18,7 @@ class Dist_sar653_1(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(.393)
+		return np.sqrt((1./8)*(np.arcsin(1))-(1./8)*(np.arcsin(-1)))
 
 
 def test(cls):
