@@ -4,8 +4,8 @@ from base_distribution import BaseDistribution
 class Dist_az1332(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
-		self.x_min = -(3/2)**(1/3)
-		self.x_max = (3/2)**(1/3)
+		self.x_min = -(3./2)**(1./3)
+		self.x_max = (3./2)**(1./3)
 
 
 	def pdf(self, x):
