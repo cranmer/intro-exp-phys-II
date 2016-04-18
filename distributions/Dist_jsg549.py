@@ -18,7 +18,7 @@ class Dist_jsg549(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(.24204)
+		return np.sqrt((np.e-1)*(3-np.e)/2)
 
 
 def test(cls):
