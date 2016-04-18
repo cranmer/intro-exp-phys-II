@@ -1,16 +1,16 @@
 import numpy as np
 from base_distribution import BaseDistribution
 
-class Dist_ams1396(BaseDistribution):
+class Dist_sar653_1(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
-		self.x_min = -0.5
-		self.x_max = 0.5
+		self.x_min = -1
+		self.x_max = 1
 
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return (5*(x**6))
+		return np.sqrt(1-x**2)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
@@ -18,7 +18,7 @@ class Dist_ams1396(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return (((5./9)*(((dist.x_max)**9) - ((dist.x_min)**9)))**(0.5)) 
+		return np.sqrt((1./8)*(np.arcsin(1))-(1./8)*(np.arcsin(-1)))
 
 
 def test(cls):
@@ -43,4 +43,4 @@ def test(cls):
 		print("%s has errors't work" %(cls.__name__))
 
 if __name__ == '__main__':
-	test(Dist_ams1396)
+	test(Dist_sar653_1)
