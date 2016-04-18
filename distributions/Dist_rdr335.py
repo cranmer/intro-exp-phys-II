@@ -1,9 +1,9 @@
 import numpy as np
 from base_distribution import BaseDistribution
 
-c = np.sqrt(2/np.pi)
 class Dist_rdr335(BaseDistribution):
 	def __init__(self):
+		c = np.sqrt(2/np.pi)
 		self.f_max = c
 		self.x_min = -c
 		self.x_max = c
