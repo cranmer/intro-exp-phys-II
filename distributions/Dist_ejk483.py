@@ -1,25 +1,25 @@
+
 import numpy as np
 from base_distribution import BaseDistribution
 
-class Dist_mh3908(BaseDistribution):
+class Dist_ejk483(BaseDistribution):
 	def __init__(self):
-		self.f_max = 32
-		self.x_min = -10
-		self.x_max = 90
+		self.f_max = 1
+		self.x_min = 1
+		self.x_max = 2
 
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.abs(x^(3/4))
+		return np.log(x)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 40.
+		return 1.65
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(26)
-
+		return 0.24
 
 def test(cls):
 	try:
@@ -40,7 +40,7 @@ def test(cls):
 		else:
 			print("%s passes tests, adding it" %(cls.__name__))
 	except:
-		print("%s has errors't work" %(cls.__name__))
+		print("%s has errors. didn't work" %(cls.__name__))
 
 if __name__ == '__main__':
-	test(Dist_mh3908)
+	test(Dist_ejk483)
