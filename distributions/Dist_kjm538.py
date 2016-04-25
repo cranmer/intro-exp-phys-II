@@ -20,6 +20,6 @@ class Dist_kjm538(BaseDistribution):
 	def std(self):
 		"""This is the standard deviation of the pdf"""
 		return np.sqrt((4./23.)*((-((self.x_max**3)/9.)+
-		(50110707.*(np.log(self.x_max)-1))/500000.)
-		+(((self.x_max**3)/3.)*np.log(self.x_max))-(36783./500.)*
-		(np.log(self.x_max**2)-1))+(5780027./2250000.))
+		(100.22*(np.log(self.x_max)-1)))
+		+(((self.x_max**3)/3.)*np.log(self.x_max))-(73.566)*
+		(np.log(self.x_max**2)-1))+(2.5689))
