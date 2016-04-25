@@ -16,16 +16,31 @@ class Dist_psa251(BaseDistribution):
     def __init__(self):
         self.x_min = -1.
         self.x_max = 1.
-        self.f_max = 1.
+        self.f_max = 0.75
+        self.mu    = -999.
+
+        # self._k = 1
 
     def pdf(self, x):
-        return 1. - x**2.
+        # print self._k
+        # self._k += 1
+        return self.f_max*(1. - x**2.)
 
     def mean(self):
-        return 0.
+        a = self.x_min
+        b = self.x_max
+
+        self.mu = self.f_max*((0.5*b**2.) - (0.25*b**4.) - (0.5*a**2.) + (0.25*a**2.))
+        return self.mu
 
     def std(self):
-        return np.sqrt(4./15.)
+        if self.mu == -999.:
+            self.mean()
+
+        f0 = self.f_max * ((1./3.)*self.x_min**3. - (1./5.)*self.x_min**5.) - (2.*self.mu**2.) + (self.f_max*self.mu**2.)*(self.x_min - (1./3.)*(self.x_min**3.))
+        f1 = self.f_max * ((1./3.)*self.x_max**3. - (1./5.)*self.x_max**5.) - (2.*self.mu**2.) + (self.f_max*self.mu**2.)*(self.x_max - (1./3.)*(self.x_max**3.))
+
+        return np.sqrt(f1 - f0)
 
 def test(cls):
 	try:
