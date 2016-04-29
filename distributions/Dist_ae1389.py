@@ -1,3 +1,6 @@
+import numpy as np
+from base_distribution import BaseDistribution
+
 class Dist_ae1389(BaseDistribution):
   def __init__(self):
      self.f_max = np.sin(np.pi*np.cos(x**2))
