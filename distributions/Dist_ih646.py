@@ -1,6 +1,6 @@
 
 import numpy as np
-from base_distribution import BaseDistribution
+from .base_distribution import BaseDistribution
 x_min=0
 x_max=1
 class Dist_ih646(BaseDistribution):
