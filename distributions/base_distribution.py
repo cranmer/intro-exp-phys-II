@@ -34,7 +34,7 @@ class BaseDistribution(object):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		print "not implemented"
+		#print "not implemented"
 		return np.abs(x)
         #raise NotImplementedError
 

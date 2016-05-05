@@ -4,7 +4,7 @@ import numpy as np
 
 import traceback
 
-from base_distribution import BaseDistribution
+from .base_distribution import BaseDistribution
 
 class Dist_psa251_2(BaseDistribution):
     # Trying exp. dist again
