@@ -1,5 +1,5 @@
 import numpy as np
-from base_distribution import BaseDistribution
+from .base_distribution import BaseDistribution
 
 '''Distribution of the z values of a short acrylic cylinder, measured in the 
 Center for Soft Matter Research to determine flatness.'''

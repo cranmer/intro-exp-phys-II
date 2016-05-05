@@ -4,7 +4,7 @@ import numpy as np
 
 import traceback
 
-from base_distribution import BaseDistribution
+from .base_distribution import BaseDistribution
 
 class Dist_psa251(BaseDistribution):
     # Ditched exp. distribution
