@@ -14,7 +14,7 @@ class Dist_jgc375(BaseDistribution):
 	def pdf(self, x):
 		"""This is your PDF"""
 		mu, sigma = 2130.93795, 15.65586 # mean and standard deviation
-                s = 1/(sigma * np.sqrt(2 * np.pi)) *np.exp( - (x - mu)**2 / (2 * sigma**2))
+		s = 1/(sigma * np.sqrt(2 * np.pi)) *np.exp( - (x - mu)**2 / (2 * sigma**2))
 		return s
 
 	def mean(self):
