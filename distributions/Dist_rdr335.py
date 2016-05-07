@@ -3,18 +3,19 @@ from .base_distribution import BaseDistribution
 
 class Dist_rdr335(BaseDistribution):
 	def __init__(self):
-		self.f_max = np.sqrt(2/np.pi)
-		self.x_min = -np.sqrt(2/np.pi)
-		self.x_max = np.sqrt(2/np.pi)
+		c = np.sqrt(2/np.pi)
+		self.f_max = c
+		self.x_min = -c
+		self.x_max = c
 		
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.sqrt(2/np.pi - x**2)
+		return np.sqrt(c**2 - x**2)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.
+		return 0.001357
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 0.1
+		return 0.399119
