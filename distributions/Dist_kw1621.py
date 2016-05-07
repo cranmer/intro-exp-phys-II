@@ -1,5 +1,5 @@
 import numpy as np
-from base_distribution import BaseDistribution
+from .base_distribution import BaseDistribution
 
 class Dist_kw1621(BaseDistribution):
 	def __init__(self):
@@ -8,10 +8,10 @@ class Dist_kw1621(BaseDistribution):
 		self.x_max = 10
 
 
-        def Normalization(self, x):
-            temp = (32 * x**3 - 12 *x * np.cos(4 *x) + (3 - 24 *x**2) * np.sin(4 *x) )/768
-            #print(temp)
-            return temp 
+	def Normalization(self, x):
+	    temp = (32 * x**3 - 12 *x * np.cos(4 *x) + (3 - 24 *x**2) * np.sin(4 *x) )/768
+	    #print(temp)
+	    return temp 
             
 	def pdf(self, x):
 		"""This is your PDF"""
