@@ -19,4 +19,4 @@ class dist_tcb315(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(75/112)
+		return np.sqrt(75./112)
