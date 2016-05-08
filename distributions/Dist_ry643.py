@@ -15,13 +15,19 @@ class Dist_ry643(BaseDistribution):
     def mean(self):
         """This is the mean of the PDF"""
         return 8./5 #integral (from self.x_min to self.x_max) of x times f(x)
+<<<<<<< HEAD:Dist_ry643.py
+=======
         		# (((self.x_max)**5)/20) - (((self.x_min)**5)/20)
+>>>>>>> cranmer/master:distributions/Dist_ry643.py
 
     def std(self):
         """This is the standard deviation of the pdf"""
         return np.sqrt(8./75)    #integral (from self.x_min to self.x_max) of [(x-mean)**2 times f(x)]
                                  #sqrt of answer gives std dev.
+<<<<<<< HEAD:Dist_ry643.py
+=======
                                  # np.sqrt(((1875*(self.x_max**6) - 480*(self.x_max**5) + 32*(self.x_max**4))/45000) - ((1875*(self.x_min**6) - 480*(self.x_min**5) + 32*(self.x_min**4))/45000))
+>>>>>>> cranmer/master:distributions/Dist_ry643.py
         
 def test(cls):
 	try:

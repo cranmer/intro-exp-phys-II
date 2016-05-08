@@ -34,7 +34,11 @@ class BaseDistribution(object):
 
 	def pdf(self, x):
 		"""This is your PDF"""
+<<<<<<< HEAD
+		print "not implemented"
+=======
 		#print "not implemented"
+>>>>>>> cranmer/master
 		return np.abs(x)
         #raise NotImplementedError
 
