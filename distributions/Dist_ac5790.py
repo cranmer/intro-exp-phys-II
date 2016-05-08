@@ -1,5 +1,9 @@
 import numpy as np
+<<<<<<< HEAD
+from base_distribution import BaseDistribution
+=======
 from .base_distribution import BaseDistribution
+>>>>>>> cranmer/master
 
 class Dist_ac5790(BaseDistribution):
 	def __init__(self):
@@ -10,7 +14,11 @@ class Dist_ac5790(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
+<<<<<<< HEAD
+		return 1
+=======
 		return 1.
+>>>>>>> cranmer/master
 
 	def mean(self):
 		"""This is the mean of the PDF"""

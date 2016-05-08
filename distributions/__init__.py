@@ -5,12 +5,37 @@ Add a new file that will return N samples from your distribution similar to exam
 Then add the name to the list below.
 
 
+<<<<<<< HEAD
+grep class Dist*py | sed 's/(BaseDistribution)://' | sed 's/class //' | sed 's/^Dist/from Dist/' | sed 's/.py:/ import /'
+=======
 grep class Dist*py | sed 's/(BaseDistribution)://' | sed 's/class //' | sed 's/^Dist/from .Dist/' | sed 's/.py:/ import /'
+>>>>>>> cranmer/master
 
 grep -h class Dist*py | sed 's/(BaseDistribution):/\",/' | sed 's/class /\"/'
 
 """
 
+<<<<<<< HEAD
+from Dist_ac5790 import Dist_ac5790
+from Dist_jeg535 import Dist_jeg535
+from Dist_kc90 import Dist_kc90
+from Dist_kc90_2 import Dist_kc90_2
+from Dist_kc90_3 import Dist_kc90_3
+from Dist_recast import Dist_recast
+from Dist_vag273 import Dist_vag273
+from Dist_vag273_1 import Dist_vag273
+from Dist_vag273_2 import Dist_vag273_2
+
+__all__ = ("Dist_ac5790",
+	"Dist_jeg535",
+	"Dist_kc90",
+	"Dist_kc90_2",
+	"Dist_kc90_3",
+	"Dist_recast",
+	"Dist_vag273",
+	"Dist_vag273",
+	"Dist_vag273_2",)
+=======
 from __future__ import absolute_import
 
 from .Dist_ac5790 import Dist_ac5790
@@ -91,3 +116,4 @@ __all__ = ("Dist_ac5790",
 	"Dist_yz2668",)
 
 
+>>>>>>> cranmer/master

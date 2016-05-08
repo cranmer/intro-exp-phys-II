@@ -1,8 +1,14 @@
 
 import numpy as np
+<<<<<<< HEAD
+from base_distribution import BaseDistribution
+
+class Dist_vag273(BaseDistribution):
+=======
 from .base_distribution import BaseDistribution
 
 class Dist_vag273_1(BaseDistribution):
+>>>>>>> cranmer/master
 	def __init__(self):
 		self.f_max = 2
 		self.x_min = 0
