@@ -1,5 +1,5 @@
 import numpy as np
-from base_distribution import BaseDistribution
+from .base_distribution import BaseDistribution
 
 class Dist_ams1396(BaseDistribution):
 	def __init__(self):
@@ -10,7 +10,7 @@ class Dist_ams1396(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return (5*(x**11))
+		return (5*(x**6))
 
 	def mean(self):
 		"""This is the mean of the PDF"""
@@ -18,7 +18,7 @@ class Dist_ams1396(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return ((5./14)*(((dist.x_max)**14) - ((dist.x_min)**14))) 
+		return (((5./9)*(((dist.x_max)**9) - ((dist.x_min)**9)))**(0.5)) 
 
 
 def test(cls):

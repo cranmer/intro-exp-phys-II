@@ -2,7 +2,7 @@
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_yr595(BaseDistribution):
+class Dist_nj18(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
 		self.x_min = -1
@@ -11,7 +11,7 @@ class Dist_yr595(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return 2/np.pi * np.sqrt(1-x**2)
+		return (pow(x, 2) + 1./6.)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
@@ -19,4 +19,6 @@ class Dist_yr595(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 0.5
+		return np.sqrt(23./45.)
+
+
