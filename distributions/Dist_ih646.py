@@ -1,43 +1,26 @@
 
 import numpy as np
-<<<<<<< HEAD
-from base_distribution import BaseDistribution
-
-class Dist_kc90(BaseDistribution):
-=======
 from .base_distribution import BaseDistribution
-
-class Dist_hk1764(BaseDistribution):
->>>>>>> cranmer/master
+x_min=0
+x_max=1
+class Dist_ih646(BaseDistribution):
 	def __init__(self):
-		self.f_max = 1
-		self.x_min = -1
+		self.f_max = 3
+		self.x_min = 0
 		self.x_max = 1
 
 
 	def pdf(self, x):
 		"""This is your PDF"""
-<<<<<<< HEAD
-		return np.abs(x)
+		return 3*x**2
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.
+		return (3./4)*x_max**4
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(0.5)
-=======
-		return np.abs((x**2-x**3)/x)
-
-	def mean(self):
-		"""This is the mean of the PDF"""
-		return -.41
-
-	def std(self):
-		"""This is the standard deviation of the pdf"""
-		return .51
->>>>>>> cranmer/master
+		return np.sqrt((3./5)*x_max**5-(9./8)*x_max**4+(27./48)*x_max**3)
 
 
 def test(cls):
@@ -62,8 +45,4 @@ def test(cls):
 		print("%s has errors't work" %(cls.__name__))
 
 if __name__ == '__main__':
-<<<<<<< HEAD
-	test(Dist_kc90)
-=======
-	test(Dist_hk1764)
->>>>>>> cranmer/master
+	test(Dist_ih646)

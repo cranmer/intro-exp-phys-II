@@ -1,6 +1,10 @@
 
 import numpy as np
+<<<<<<< HEAD
 from base_distribution import BaseDistribution
+=======
+from .base_distribution import BaseDistribution
+>>>>>>> cranmer/master
 
 class Dist_kc90_3(BaseDistribution):
 	def __init__(self):

@@ -1,6 +1,10 @@
 
 import numpy as np
+<<<<<<< HEAD
 from base_distribution import BaseDistribution
+=======
+from .base_distribution import BaseDistribution
+>>>>>>> cranmer/master
 
 class Dist_my1462(BaseDistribution):
 	def __init__(self):
@@ -15,11 +19,19 @@ class Dist_my1462(BaseDistribution):
 
 	def mean(self):
 		"""This is the mean of the PDF"""
+<<<<<<< HEAD
 		return 3.
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
 		return np.sqrt(3.8)
+=======
+		return -1.87
+
+	def std(self):
+		"""This is the standard deviation of the pdf"""
+		return 16.2
+>>>>>>> cranmer/master
 
 
 def test(cls):
@@ -44,4 +56,8 @@ def test(cls):
 		print("%s has errors't work" %(cls.__name__))
 
 if __name__ == '__main__':
+<<<<<<< HEAD
 	test(Dist_my1462)
+=======
+	test(Dist_my1462)
+>>>>>>> cranmer/master

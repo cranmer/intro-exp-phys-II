@@ -1,26 +1,26 @@
 import numpy as np
-from base_distribution import BaseDistribution
+from .base_distribution import BaseDistribution
 
-class Dist_ry643(BaseDistribution):
-    def __init__(self):
-        self.f_max = 2
-        self.x_min = 0
-        self.x_max = 2
+class Dist_jsg549(BaseDistribution):
+	def __init__(self):
+		self.f_max = 1
+		self.x_min = 1
+		self.x_max = np.e
 
 
-    def pdf(self, x):
-        """This is your PDF"""
-        return (x**3)/4
+	def pdf(self, x):
+		"""This is your PDF"""
+		return 1/x
 
-    def mean(self):
-        """This is the mean of the PDF"""
-        return 8./5 #integral (from self.x_min to self.x_max) of x times f(x)
+	def mean(self):
+		"""This is the mean of the PDF"""
+		return np.e-1
 
-    def std(self):
-        """This is the standard deviation of the pdf"""
-        return np.sqrt(8./75)    #integral (from self.x_min to self.x_max) of [(x-mean)**2 times f(x)]
-                                 #sqrt of answer gives std dev.
-        
+	def std(self):
+		"""This is the standard deviation of the pdf"""
+		return np.sqrt((np.e-1)*(3-np.e)/2)
+
+
 def test(cls):
 	try:
 		dist = cls()
@@ -43,4 +43,4 @@ def test(cls):
 		print("%s has errors't work" %(cls.__name__))
 
 if __name__ == '__main__':
-	test(Dist_ry643)
+	test(Dist_jsg549)
