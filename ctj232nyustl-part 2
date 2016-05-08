@@ -1,0 +1,113 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from base_distribution import BaseDistribution
+
+class Dist_ctj232(BaseDistribution):
+	def __init__(self):
+		self.f_max = 1
+		self.x_min = -5
+		self.x_max = 5
+
+	def pdf(self, x):
+		#"""This is your PDF""" x
+		return x**2
+
+	def mean(self):
+		#"""This is the mean of the PDF"""
+		return 0.
+
+	def std(self):
+		#"""This is the standard deviation of the pdf"""
+		return np.sqrt(0.5)
+
+
+def test(cls):
+	try:
+		dist = cls()
+		N_test = 100000
+		rvs = dist.rvs(N_test)
+		if np.abs(np.mean(rvs) - dist.mean()) > 5*np.std(rvs)/np.sqrt(N_test):
+			print("means don't match for %s: %f vs. %f" %(cls.__name__, 
+														  np.mean(rvs), dist.mean()))
+			
+		elif np.abs(np.std(rvs) - dist.std()) > 5*np.std(rvs)/np.sqrt(np.sqrt(1.*N_test)):
+			print("std devs. don't match for %s: %f vs. %f" %(cls.__name__, 
+														  np.std(rvs), dist.std()))
+		
+		elif np.sum(dist.pdf(np.linspace(dist.x_min,dist.x_max,100))<0) > 0:
+			print("pdf was negative in some places")
+
+		else:
+			print("%s passes tests, adding it" %(cls.__name__))
+	except:
+		print("%s has errors't work" %(cls.__name__))
+
+if __name__ == '__main__':
+	test(Dist_ctj232)
+
+import distributions
+
+all_distributions_dict = dict([(name, cls) for name, cls in distributions.__dict__.items() if isinstance(cls, type)])
+all_distributions_list = [(cls) for name, cls in distributions.__dict__.items() if isinstance(cls, type)]
+
+all_distributions_dict.keys()
+len(all_distributions_dict.keys())
+
+np.random.choice(['a','b','c','d'], 10)
+	
+def do_random_convolution(list_of_distributions, N):
+    n_samples = 10000
+    q = np.zeros(n_samples)
+    var_q = 0.
+    mean_q = 0.
+
+    for dist_class in np.random.choice(list_of_distributions,N):
+        dist = dist_class()
+        print(dist_class.__name__, dist.std())
+        q = q+dist.rvs(n_samples)
+        var_q = var_q + dist.std()**2
+        mean_q = mean_q + dist.mean()
+
+    std_q = np.sqrt( var_q )
+
+
+    counts, bins, patches = plt.hist(q,bins=50, normed=True, alpha=.2)
+    plt.plot(bins, norm.pdf(bins,loc=mean_q, scale=std_q), lw=2, c='r')
+    
+do_random_convolution(ok_distributions_list,50)
+
+%pylab inline --no-import-all
+from scipy.stats import norm
+
+n_bins = 30
+x = norm.rvs(size=1500)
+
+
+bins
+right_edges = bins[1:]
+right_edges
+left_edges = bins[:-1]
+left_edges
+bin_centers = (right_edges+left_edges)/2
+bin_centers
+bin_width = bins[1]-bins[0]
+
+normalization = x.size*(bins[1]-bins[0])
+prediction = normalization*norm.pdf(bin_centers)
+counts, bins, patches = plt.hist(x, bins=n_bins,normed=False)
+plt.plot(bin_centers,prediction, c='r', lw=2)
+
+np.sum(prediction), np.sum(counts)
+temp = plt.hist((counts-prediction)/np.sqrt(prediction), bins=7, normed=True, alpha=0.2)
+plt.plot(temp[1], norm.pdf(temp[1]))
+plt.plot(temp[1], norm.pdf(temp[1]), label='N(0,1)')
+plt.legend()
+plt.xlabel('(counts-prediction)/sqrt(prediction)')
+
+
+from scipy.stats import chisquare
+from scipy.stats import chi2
+np.sum((counts-prediction)**2/prediction)
+chisq_obs, pvalue = chisquare(counts, prediction)
+chisq_obs, pvalue
+chi2.sf(chisq_obs,counts.size)
