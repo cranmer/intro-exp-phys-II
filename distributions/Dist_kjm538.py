@@ -1,5 +1,5 @@
 import numpy as np
-from base_distribution import BaseDistribution
+from .base_distribution import BaseDistribution
 
 class Dist_kjm538(BaseDistribution):
 	def __init__(self):
