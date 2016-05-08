@@ -1,6 +1,10 @@
 
 import numpy as np
+<<<<<<< HEAD
+from base_distribution import BaseDistribution
+=======
 from .base_distribution import BaseDistribution
+>>>>>>> cranmer/master
 
 class Dist_vag273(BaseDistribution):
 	def __init__(self):
@@ -20,6 +24,8 @@ class Dist_vag273(BaseDistribution):
 	def std(self):
 		"""This is the standard deviation of the pdf"""
 		return np.sqrt(1./12)
+<<<<<<< HEAD
+=======
 
 def test(cls):
 	try:
@@ -44,3 +50,4 @@ def test(cls):
 
 if __name__ == '__main__':
 	test(Dist_vag273)
+>>>>>>> cranmer/master

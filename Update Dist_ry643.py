@@ -1,45 +1,26 @@
-
 import numpy as np
-<<<<<<< HEAD
 from base_distribution import BaseDistribution
 
-class Dist_kc90(BaseDistribution):
-=======
-from .base_distribution import BaseDistribution
-
-class Dist_hk1764(BaseDistribution):
->>>>>>> cranmer/master
-	def __init__(self):
-		self.f_max = 1
-		self.x_min = -1
-		self.x_max = 1
+class Dist_ry643(BaseDistribution):
+    def __init__(self):
+        self.f_max = 2
+        self.x_min = 0
+        self.x_max = 2
 
 
-	def pdf(self, x):
-		"""This is your PDF"""
-<<<<<<< HEAD
-		return np.abs(x)
+    def pdf(self, x):
+        """This is your PDF"""
+        return (x**3)/4
 
-	def mean(self):
-		"""This is the mean of the PDF"""
-		return 0.
+    def mean(self):
+        """This is the mean of the PDF"""
+        return 8./5 #integral (from self.x_min to self.x_max) of x times f(x)
 
-	def std(self):
-		"""This is the standard deviation of the pdf"""
-		return np.sqrt(0.5)
-=======
-		return np.abs((x**2-x**3)/x)
-
-	def mean(self):
-		"""This is the mean of the PDF"""
-		return -.41
-
-	def std(self):
-		"""This is the standard deviation of the pdf"""
-		return .51
->>>>>>> cranmer/master
-
-
+    def std(self):
+        """This is the standard deviation of the pdf"""
+        return np.sqrt(8./75)    #integral (from self.x_min to self.x_max) of [(x-mean)**2 times f(x)]
+                                 #sqrt of answer gives std dev.
+        
 def test(cls):
 	try:
 		dist = cls()
@@ -62,8 +43,4 @@ def test(cls):
 		print("%s has errors't work" %(cls.__name__))
 
 if __name__ == '__main__':
-<<<<<<< HEAD
-	test(Dist_kc90)
-=======
-	test(Dist_hk1764)
->>>>>>> cranmer/master
+	test(Dist_ry643)
