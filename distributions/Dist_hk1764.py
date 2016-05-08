@@ -1,24 +1,25 @@
+
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_jsg549(BaseDistribution):
+class Dist_hk1764(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
-		self.x_min = 1
-		self.x_max = np.e
+		self.x_min = -1
+		self.x_max = 1
 
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return 1/x
+		return x**2
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return np.e-1
-
+		return (self.x_max**4/4 - self.x_min**4/4)
+	
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt((np.e-1)*(3-np.e)/2)
+		return np.abs (np.sqrt((((self.x_max-(self.x_max**3/3. - self.x_min**3/3.)))**2 - (self.x_min-(self.x_max**3/3. - self.x_min**3/3.))**2)/2))
 
 
 def test(cls):
@@ -43,4 +44,4 @@ def test(cls):
 		print("%s has errors't work" %(cls.__name__))
 
 if __name__ == '__main__':
-	test(Dist_jsg549)
+	test(Dist_hk1764)
