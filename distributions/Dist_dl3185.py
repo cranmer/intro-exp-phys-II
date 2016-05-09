@@ -2,7 +2,7 @@
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_hk1764(BaseDistribution):
+class Dist_dl3185(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
 		self.x_min = -1
@@ -11,15 +11,15 @@ class Dist_hk1764(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.abs((x**2-x**3)/x)
+		return x**2
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return -.41
+		return 0
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return .51
+		return np.sqrt((((self.x_max)**5.)/5.) - (((self.x_min)**5.)/5.))
 
 
 def test(cls):
@@ -44,4 +44,4 @@ def test(cls):
 		print("%s has errors't work" %(cls.__name__))
 
 if __name__ == '__main__':
-	test(Dist_hk1764)
+	test(Dist_dl3185)

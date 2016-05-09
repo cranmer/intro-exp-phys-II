@@ -15,7 +15,8 @@ class BaseDistribution(object):
 			#print n_samples, acceptance_fraction, n_samples/acceptance_fraction
 			n_trys = np.int((n_samples-temp.size)/acceptance_fraction)
 			new_samples = self.accept_reject(n_trys)
-			acceptance_fraction = 1.*new_samples.size/n_trys
+			if new_samples.size > 0:
+				acceptance_fraction = 1.*new_samples.size/n_trys
 			#print temp.shape, new_samples.shape
 			temp = np.hstack((temp,new_samples))
 		return temp[0:n_samples]
@@ -33,7 +34,7 @@ class BaseDistribution(object):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		print "not implemented"
+		#print "not implemented"
 		return np.abs(x)
         #raise NotImplementedError
 

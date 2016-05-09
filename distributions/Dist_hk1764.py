@@ -11,15 +11,15 @@ class Dist_hk1764(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.abs((x**2-x**3)/x)
+		return x**2
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return -.41
-
+		return (self.x_max**4/4 - self.x_min**4/4)
+	
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return .51
+		return np.abs (np.sqrt((((self.x_max-(self.x_max**3/3. - self.x_min**3/3.)))**2 - (self.x_min-(self.x_max**3/3. - self.x_min**3/3.))**2)/2))
 
 
 def test(cls):

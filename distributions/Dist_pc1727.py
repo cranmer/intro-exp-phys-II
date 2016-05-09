@@ -1,8 +1,7 @@
-
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_hk1764(BaseDistribution):
+class Dist_pc1727(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
 		self.x_min = -1
@@ -11,17 +10,16 @@ class Dist_hk1764(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.abs((x**2-x**3)/x)
+		return x**4
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return -.41
+		return 0.
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return .51
-
-
+		return np.sqrt((((self.x_max)**7)/7)-(((self.x_min)**7)/7))
+		
 def test(cls):
 	try:
 		dist = cls()
@@ -41,7 +39,7 @@ def test(cls):
 		else:
 			print("%s passes tests, adding it" %(cls.__name__))
 	except:
-		print("%s has errors't work" %(cls.__name__))
+		print("%s has errors. didn't work" %(cls.__name__))
 
 if __name__ == '__main__':
-	test(Dist_hk1764)
+	test(Dist_pc1727)
