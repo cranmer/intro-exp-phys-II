@@ -3,13 +3,13 @@ from .base_distribution import BaseDistribution
 
 class Dist_ak5606(BaseDistribution):
 	def __init__(self):
-		self.f_max = 8
-		self.x_min = -2
-		self.x_max = 2
+		self.f_max = 5/2.
+		self.x_min = -1
+		self.x_max = 1
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return (x**2)+4
+		return (5/2.*(x**4))
 
 	def mean(self):
 		"""This is the mean of the PDF"""
@@ -17,7 +17,7 @@ class Dist_ak5606(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(((((self.x_max**5.)/5.)+((self.x_max**3.)*4/3.)) - (((self.x_min**5.)/5.)+((self.x_min**3.)*4/3.))))
+		return np.sqrt((((self.x_max)**7.)*5/14.) - (((self.x_min)**7.)*5/14.))
 
 
 def test(cls):
