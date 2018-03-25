@@ -13,10 +13,10 @@ grep -h class Dist*py | sed 's/(BaseDistribution):/\",/' | sed 's/class /\"/'
 
 from __future__ import absolute_import
 
-from .Dist_test1 import Dist_test1
+from .Dist_kc90 import Dist_kc90
 
 __all__ = (
-	"Dist_test1",
+	"Dist_kc90",
 	)
 
 
