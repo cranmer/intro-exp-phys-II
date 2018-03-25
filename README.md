@@ -13,8 +13,8 @@ Instead you can look at it with [nbviewer](http://nbviewer.jupyter.org/). Here a
 
 Run the notebooks from within your browser without installing anything thanks to [Binder](http://mybinder.org)
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/cranmer/intro-exp-phys-II)
 
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/cranmer/intro-exp-phys-II/master)
 
 ## working with GitHub
 
