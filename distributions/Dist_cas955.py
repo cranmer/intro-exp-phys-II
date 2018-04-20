@@ -10,12 +10,12 @@ class Dist_cas955(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return 1.
+		return (-1.5*x**4+7*x**2)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.5
+		return 0
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(1./12)
+		return 8*np.sqrt(19./35)
