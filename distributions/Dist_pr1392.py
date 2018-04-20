@@ -11,12 +11,12 @@ class Dist_pr1392(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return 1.
+		return np.sin**2(x)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.5
+		return 0.
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(1./12)
+		return np.sqrt((1/6)((8*(np.pi**2)-3)))
