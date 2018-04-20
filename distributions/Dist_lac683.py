@@ -19,5 +19,5 @@ class Dist_lac683(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return (55/189)
+		return np.sqrt(55/21)/3
 
