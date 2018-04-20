@@ -11,7 +11,7 @@ class Dist_lac683(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.abs(x)
+		return (2-(x**4))
 
 	def mean(self):
 		"""This is the mean of the PDF"""
@@ -19,4 +19,5 @@ class Dist_lac683(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(1/2)
+		return (55/189)
+
