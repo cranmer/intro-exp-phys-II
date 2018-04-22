@@ -19,4 +19,4 @@ class Dist_omr234(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return (1./6.)
+		return np.sqrt(1./6.)
