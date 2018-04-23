@@ -10,7 +10,7 @@ class Dist_(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return 10x
+		return 10*x
 
 	def mean(self):
 		"""This is the mean of the PDF"""
