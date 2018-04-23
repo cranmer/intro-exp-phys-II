@@ -11,7 +11,7 @@ class Dist_jnt299(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return x**3 + 2x**2 - 13x + 8
+		return x**3 + 2*x**2 - 13*x + 8
 
 	def mean(self):
 		"""This is the mean of the PDF"""
