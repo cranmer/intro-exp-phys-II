@@ -11,13 +11,13 @@ class Dist_pbg240(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.sqrt(x)
+		return np.sqrt(x)*(3/16)
 
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 3.12
+		return 3.2
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 3
+		return 9.2647
