@@ -31,6 +31,7 @@ from .Dist_phh250 import Dist_phh250
 from .Dist_pme240 import Dist_pme240
 from .Dist_pr1392 import Dist_pr1392
 from .Dist_pw1091 import Dist_pw1091
+from .Dist_sm6779 import Dist_sm6779
 from .Dist_rdm445 import Dist_rdm445
 from .Dist_yz4244 import Dist_yz4244
 
@@ -53,6 +54,7 @@ __all__ = (
 "Dist_pr1392",
 "Dist_pw1091",
 "Dist_rdm445",
+"Dist_sm6779",
 "Dist_yz4244",
 	)
 

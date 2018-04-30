@@ -1,7 +1,7 @@
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_kc90(BaseDistribution):
+class Dist_sm6779(BaseDistribution):
 	def __init__(self):
 		self.f_max = 3**(2/3)
 		self.x_min = 0
