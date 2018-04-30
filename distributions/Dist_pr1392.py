@@ -11,7 +11,7 @@ class Dist_pr1392(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.sin**2(x)
+		return np.sin(x)**2
 
 	def mean(self):
 		"""This is the mean of the PDF"""

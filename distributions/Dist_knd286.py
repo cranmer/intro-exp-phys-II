@@ -3,7 +3,7 @@
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_kc90(BaseDistribution):
+class Dist_knd286(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1.76
 		self.x_min = 0
