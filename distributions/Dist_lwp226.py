@@ -1,7 +1,7 @@
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_(BaseDistribution):
+class Dist_lwp226(BaseDistribution):
 	def __init__(self):
 		self.f_max = 5
 		self.x_min = 0

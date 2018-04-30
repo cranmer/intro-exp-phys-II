@@ -2,7 +2,7 @@
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_(BaseDistribution):
+class Dist_pme240(BaseDistribution):
 	def __init__(self):
 		self.f_max = 3
 		self.x_min = 0
