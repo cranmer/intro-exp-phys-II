@@ -34,6 +34,7 @@ from .Dist_pw1091 import Dist_pw1091
 from .Dist_sm6779 import Dist_sm6779
 from .Dist_rdm445 import Dist_rdm445
 from .Dist_yz4244 import Dist_yz4244
+from .Dist_speedreed import Dist_speedreed
 from .Dist_speedreed2 import Dist_speedreed2
 
 __all__ = (
@@ -47,6 +48,7 @@ __all__ = (
 "Dist_knd286",
 "Dist_lac683",
 "Dist_lwp226",
+"Dist_speedreed",
 "Dist_mm7253",
 "Dist_omr234",
 "Dist_os852",
