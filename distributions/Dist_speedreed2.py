@@ -5,7 +5,7 @@ class Dist_speedreed2(BaseDistribution):
 	def __init__(self):
 		self.f_max = 2
 		self.x_min = -2
-		self.x_max = 1
+		self.x_max = 2
 
 
 	def pdf(self, x):

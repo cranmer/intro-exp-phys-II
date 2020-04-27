@@ -19,3 +19,5 @@ class Dist_kc90(BaseDistribution):
 	def std(self):
 		"""This is the standard deviation of the pdf"""
 		return np.sqrt(0.5)
+
+

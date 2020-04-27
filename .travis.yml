@@ -21,5 +21,5 @@ script:
   - pip install -U wheel
   - pip install numpy==$NUMPY_VERSION
   - pip install pytest
-  - python setup.py build
+#  - python setup.py build
   - python -m pytest
