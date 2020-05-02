@@ -3,14 +3,14 @@ from .base_distribution import BaseDistribution
 
 class Dist_tt1392(BaseDistribution):
 	def __init__(self):
-		self.f_max = 1
-		self.x_min = -1
-		self.x_max = 1
+		self.f_max = 0.56
+		self.x_min = -inf
+		self.x_max = inf
 
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.abs(x)
+		return 1/np.sqrt(pi) e^(-x^2)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
