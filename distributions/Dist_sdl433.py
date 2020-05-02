@@ -13,7 +13,7 @@ class Dist_sdl433(BaseDistribution):
 	
 	#Returns mean of the pdf
 	def mean(self):
-        	return 1/2
+        	return 0.5
 	
 	#Returns standard deviation of the pdf
 	def std(self):
