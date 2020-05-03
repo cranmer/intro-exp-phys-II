@@ -1,7 +1,8 @@
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_kc90(BaseDistribution):
+class Dist_cmr653(BaseDistribution):
+	""" the inherited class"""
 	def __init__(self):
 		self.f_max = 1
 		self.x_min = -1
@@ -9,7 +10,7 @@ class Dist_kc90(BaseDistribution):
 
 
 	def pdf(self, x):
-		"""This is your PDF"""
+		"""This is your PDF - probability density function that is properly normalized"""
 		return np.abs(x)
 
 	def mean(self):
