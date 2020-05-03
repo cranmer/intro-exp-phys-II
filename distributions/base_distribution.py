@@ -3,9 +3,9 @@ import numpy as np
 
 class BaseDistribution(object):
 	def __init__(self):
-		self.f_max = None
-		self.x_min = None
-		self.x_max = None
+		self.f_max = 1
+		self.x_min = 0
+		self.x_max = 4
 
 	def rvs(self, n_samples):
 		"""This is going to call accept reject until we have enough samples"""
@@ -35,17 +35,17 @@ class BaseDistribution(object):
 	def pdf(self, x):
 		"""This is your PDF"""
 		#print "not implemented"
-		return np.abs(x)
+		return x^3/64
         #raise NotImplementedError
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.
+		return 3.2
         #raise NotImplementedError
 
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(0.5)
+		return np.sqrt(0.43)
         #raise NotImplementedError
 
