@@ -1,4 +1,3 @@
-import math as math
 import numpy as np
 from .base_distribution import BaseDistribution
 
@@ -18,4 +17,4 @@ class Dist_sj2879(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt((27)/5)
+		return np.sqrt(4)
