@@ -4,8 +4,8 @@ from .base_distribution import BaseDistribution
 class Dist_sj2879(BaseDistribution):
 	def __init__(self):
 		self.f_max = 0.5
-		self.x_min = -3
-		self.x_max = 3
+		self.x_min = -3.0
+		self.x_max = 3.0
 
 	def pdf(self, x):
 		"""This is your PDF"""
