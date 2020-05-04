@@ -1,7 +1,5 @@
 import numpy as np
 from .base_distribution import BaseDistribution
-from scipy.stats import norm
-import matplotlib.pyplot as plt
 class Dist_jdg577(BaseDistribution):
 	def __init__(self):
 		self.f_max = 2/(np.e * np.sqrt(2*np.pi))
