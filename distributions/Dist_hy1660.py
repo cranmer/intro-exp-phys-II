@@ -3,14 +3,14 @@ from .base_distribution import BaseDistribution
 
 class Dist_hy1660(BaseDistribution):
    def __init__(self):
-      self.f_max = lambda x: 2*x
+      self.f_max = 2
       self.x_min = 0
       self.x_max = 1
 
 
    def pdf(self, x):
       """This is your PDF"""
-      return self.f_max(x) / 1 #Integration of 2x from 0 to 1 equals to 1
+      return 2*x
 
    def mean(self):
       """This is the mean of the PDF"""
