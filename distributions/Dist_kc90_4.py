@@ -14,7 +14,7 @@ class Dist_kc90_4(BaseDistribution):
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 3.
+		return 0.
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""

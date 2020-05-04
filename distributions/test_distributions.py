@@ -12,24 +12,15 @@ def test_Dist_kc90():
 import distributions
 all_distributions_dict = dict([(name, cls) for name, cls in distributions.__dict__.items() if isinstance(cls, type)])
 
-known_problems = ['Dist_lwp226',
-    'Dist_fay221',
-    'Dist_pme240',
+known_problems = [
     'Dist_jam1535',
-    'Dist_mm7253',
     'Dist_at4227',
-    'Dist_yz4244',
-    'Dist_pr1392',
-    'Dist_cas955',
     'Dist_ks938',
-    'Dist_ap5312',
     'Dist_pbg240',
-    'Dist_omr234',
-    'Dist_jnt299',
     'Dist_abw400',
-    'Dist_fh828']
+    ]
 
-print(all_distributions_dict)
+#print(all_distributions_dict)
 for problem in known_problems: 
     all_distributions_dict.pop(problem) #remove from dict
     distributions.__dict__.pop(problem)

@@ -1,0 +1,25 @@
+
+
+new:
+means don't match for Dist_at4227: 1.871766 vs. 1.500000
+means don't match for Dist_pbg240: 2.403413 vs. 3.200000
+means don't match for Dist_abw400: 0.564249 vs. 0.600000
+
+Dist_ks938 has errors, does't work
+
+/Users/cranmer/Documents/GitHub/intro-exp-phys-II/distributions/Dist_cah736.py:13: RuntimeWarning: invalid value encountered in true_divide
+  return ((np.sin(x)**2))/(1.55595*x)
+
+
+old: 
+means don't match for Dist_pr1392: 0.733684 vs. 0.000000 - old 
+means don't match for Dist_cas955: 0.621598 vs. 0.000000 - old 
+means don't match for Dist_ap5312: 0.722339 vs. 0.800000 - old
+means don't match for Dist_omr234: 0.666733 vs. 1.000000 - old
+std devs. don't match for Dist_jnt299: 0.040549 vs. 0.001646 - old
+std devs. don't match for Dist_fh828: 0.218081 vs. 0.181690 - old
+means don't match for Dist_lwp226: 0.333034 vs. 2.500000 - old
+means don't match for Dist_fay221: 0.499642 vs. 1.500000 - old
+std devs. don't match for Dist_pme240: 0.095164 vs. 0.040377 - old
+means don't match for Dist_mm7253: 0.098577 vs. 0.119000 - old
+means don't match for Dist_yz4244: 0.834433 vs. 0.166667 - old 
