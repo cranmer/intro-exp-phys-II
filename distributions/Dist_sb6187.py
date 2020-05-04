@@ -11,7 +11,7 @@ class Dist_sb6187(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return (math.sin(x)*math.cos(x))+2
+		return (0.0765440563)*((math.sin(x)*math.cos(x))+2)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
