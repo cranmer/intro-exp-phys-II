@@ -1,4 +1,5 @@
-m .base_distribution import BaseDistribution
+import numpy as np
+from .base_distribution import BaseDistribution
 
 class Dist_jdg577(BaseDistribution):
 	def __init__(self):
