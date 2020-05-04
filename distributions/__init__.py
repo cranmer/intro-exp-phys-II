@@ -14,6 +14,7 @@ grep -h class Dist*py | sed 's/(BaseDistribution):/\",/' | sed 's/class /\"/'
 from __future__ import absolute_import
 
 from .Dist_kc90 import Dist_kc90
+from .Dist_mkb452 import Dist_mkb452
 #from .Dist_ap5312 import Dist_ap5312
 #from .Dist_cas955 import Dist_cas955
 #from .Dist_fay221 import Dist_fay221
@@ -45,6 +46,7 @@ __all__ = (
 #"Dist_jam1535",
 "Dist_jnt299",
 "Dist_kc90",
+"Dist_mkb452",
 "Dist_knd286",
 "Dist_lac683",
 #"Dist_lwp226",
