@@ -10,7 +10,7 @@ class Dist_sk7372(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return 1.5(x ** 2) ##obtained after finding z from integrating x^2 from -1 to 1
+		return 1.5 * np.power(x,2) ##obtained after finding z from integrating x^2 from -1 to 1
 
 	def mean(self):
 		"""This is the mean of the PDF"""
