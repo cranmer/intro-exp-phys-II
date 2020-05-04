@@ -2,21 +2,20 @@ import numpy as np
 from .base_distribution import BaseDistribution
 
 class Dist_cmr653(BaseDistribution):
-	""" the inherited class"""
 	def __init__(self):
 		self.f_max = 1
-		self.x_min = -1
-		self.x_max = 1
+		self.x_min = -2
+		self.x_max = 2
 
 
 	def pdf(self, x):
-		"""This is your PDF - probability density function that is properly normalized"""
-		return np.abs(x)
+		"""This is your PDF"""
+		return 3*(x**2 + 5)/76
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.
+		return 0
 
 	def std(self):
-		"""This is the standard deviation of the pdf"""
-		return np.sqrt(0.5)
+		"""This is the standard deviation of the PDF"""
+		return np.sqrt(148/95)
