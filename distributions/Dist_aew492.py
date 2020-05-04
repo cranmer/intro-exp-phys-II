@@ -10,7 +10,7 @@ class Dist_aew492(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.abs(x)
+		return (1/1.677)*np.sin(x**2)+np.cos(x**2)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
