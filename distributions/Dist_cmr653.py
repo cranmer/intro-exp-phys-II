@@ -3,7 +3,7 @@ from .base_distribution import BaseDistribution
 
 class Dist_cmr653(BaseDistribution):
 	def __init__(self):
-		self.f_max = 1
+		self.f_max = 27/76
 		self.x_min = -2
 		self.x_max = 2
 
