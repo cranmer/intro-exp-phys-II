@@ -1,7 +1,6 @@
-import numpy as np
-from .base_distribution import BaseDistribution
+m .base_distribution import BaseDistribution
 
-class Dist_kc90(BaseDistribution):
+class Dist_jdg577(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
 		self.x_min = -1
@@ -19,5 +18,3 @@ class Dist_kc90(BaseDistribution):
 	def std(self):
 		"""This is the standard deviation of the pdf"""
 		return np.sqrt(0.5)
-
-
