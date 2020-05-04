@@ -18,12 +18,27 @@ known_problems = [
     'Dist_ks938',
     'Dist_pbg240',
     'Dist_abw400',
+    'Dist_jam1535', #old ones
+    'Dist_mm7253',
+    'Dist_at4227',
+    'Dist_yz4244',
+    'Dist_pr1392',
+    'Dist_cas955',
+    'Dist_ks938',
+    'Dist_ap5312',
+    'Dist_pbg240',
+    'Dist_omr234',
+    'Dist_jnt299',
+    'Dist_abw400',
+    'Dist_fh828'
     ]
 
 #print(all_distributions_dict)
 for problem in known_problems: 
-    all_distributions_dict.pop(problem) #remove from dict
-    distributions.__dict__.pop(problem)
+    if problem in all_distributions_dict.keys():
+        all_distributions_dict.pop(problem) #remove from dict
+    if problem in distributions.__dict__.keys():
+        distributions.__dict__.pop(problem)
 
 all_distributions_list = [(cls) for name, cls in distributions.__dict__.items() if isinstance(cls, type)]
 
