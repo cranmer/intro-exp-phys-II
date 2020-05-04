@@ -10,7 +10,7 @@ class Dist_ia1113(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.exp(x) 
+		return np.exp(x)/711.409
 
 	def mean(self):
 		"""This is the mean of the PDF"""
