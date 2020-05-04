@@ -10,7 +10,7 @@ class Dist_rmr557(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return (1.0/14)(3.0*(x**2) - 6.0*x + 9.0)
+		return (1.0/14)* (3.0*(x**2) - 6.0*x + 9.0)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
