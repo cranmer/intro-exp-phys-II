@@ -18,4 +18,4 @@ class Dist_emm815(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(0.8625)
+		return np.sqrt(0.0375)
