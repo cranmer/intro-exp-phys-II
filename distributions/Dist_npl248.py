@@ -18,5 +18,4 @@ class Dist_npl248(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return (((pi**2)/2)-(56/27))
-		
+		return sqrt(((pi**2)/2)-(56/27))
