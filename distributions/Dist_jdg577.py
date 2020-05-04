@@ -10,7 +10,7 @@ class Dist_jdg577(BaseDistribution):
 
 
 	def pdf(self, x):
-		return (x ** 2) * (np.exp(-x ^ 2 / 2))/np.sqrt(2*np.pi)
+		return (x ** 2) * (np.exp(-x ** 2 / 2))/np.sqrt(2*np.pi)
 
 
 	def mean(self):
