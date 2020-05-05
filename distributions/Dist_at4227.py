@@ -14,4 +14,4 @@ class Dist_at4227(BaseDistribution):
 		return np.pi/2
 
 	def std(self):
-		return .96668517
+		return .683667
