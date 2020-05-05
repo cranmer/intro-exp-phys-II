@@ -11,7 +11,7 @@ class Dist_mkb452(BaseDistribution):
 	def pdf(self, x):
 		"""This is your PDF"""
 		y = (1/0.000022737)
-		return (y*np.exp(-x,3)*np.sin(x))
+		return (y*np.exp((np.power(-x,3)))*np.sin(x))
 
 	def mean(self):
 		"""This is the mean of the PDF"""
