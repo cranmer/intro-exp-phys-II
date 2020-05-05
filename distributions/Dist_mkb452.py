@@ -3,9 +3,9 @@ from .base_distribution import BaseDistribution
 
 class Dist_mkb452(BaseDistribution):
 	def __init__(self):
-		self.f_max = 0.5
+		self.f_max = 13.5
 		self.x_min = 2
-		self.x_max = 5
+		self.x_max = 2.4
 
 
 	def pdf(self, x):
@@ -15,10 +15,10 @@ class Dist_mkb452(BaseDistribution):
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 2.06994
+		return 2.06619
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 0.066015
+		return 0.06436
 
 
