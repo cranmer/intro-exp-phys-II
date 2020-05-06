@@ -4,7 +4,7 @@ from .base_distribution import BaseDistribution
 
 class Dist_pbg240(BaseDistribution):
 	def __init__(self):
-		self.f_max = 2
+		self.f_max = 2*(3/16)
 		self.x_min = 0
 		self.x_max = 4
 

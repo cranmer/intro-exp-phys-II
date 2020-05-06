@@ -3,7 +3,7 @@ from .base_distribution import BaseDistribution
 
 class Dist_abw400(BaseDistribution):
 	def __init__(self):
-		self.f_max = 1
+		self.f_max = 1.5
 		self.x_min = 0
 		self.x_max = 1
 

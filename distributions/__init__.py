@@ -39,9 +39,11 @@ from .Dist_pw1091 import Dist_pw1091
 from .Dist_lac683 import Dist_lac683
 from .Dist_ajt540 import Dist_ajt540
 from .Dist_sm6779 import Dist_sm6779
+from .Dist_mkb452 import Dist_mkb452
 from .Dist_npl248 import Dist_npl248
 from .Dist_speedreed2 import Dist_speedreed2
 from .Dist_emm815 import Dist_emm815
+from .Dist_yx1796 import Dist_yx1796
 from .Dist_abw400 import Dist_abw400
 from .Dist_sea438 import Dist_sea438
 from .Dist_sb6187 import Dist_sb6187
@@ -77,9 +79,11 @@ __all__ = (
 "Dist_lac683",
 "Dist_ajt540",
 "Dist_sm6779",
+"Dist_mkb452",
 "Dist_npl248",
 "Dist_speedreed2",
 "Dist_emm815",
+"Dist_yx1796",
 "Dist_abw400",
 "Dist_sea438",
 "Dist_sb6187",
