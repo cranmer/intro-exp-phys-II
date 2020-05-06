@@ -3,7 +3,7 @@ from .base_distribution import BaseDistribution
 
 class Dist_sk7372(BaseDistribution):
 	def __init__(self):
-		self.f_max = 1 #found after integrating pdf from -1 to 1
+		self.f_max = 1.5 #maximum value of pdf at x=1
 		self.x_min = -1
 		self.x_max = 1
 
