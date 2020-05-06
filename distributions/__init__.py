@@ -26,7 +26,7 @@ from .Dist_lac683 import Dist_lac683
 from .Dist_lwp226 import Dist_lwp226
 from .Dist_mm7253 import Dist_mm7253
 from .Dist_omr234 import Dist_omr234
-from .Dist_os852 import Dist_os852
+#from .Dist_os852 import Dist_os852
 from .Dist_phh250 import Dist_phh250
 from .Dist_pme240 import Dist_pme240
 from .Dist_pr1392 import Dist_pr1392
@@ -51,7 +51,7 @@ __all__ = (
 "Dist_speedreed",
 "Dist_mm7253",
 "Dist_omr234",
-"Dist_os852",
+#"Dist_os852",
 "Dist_phh250",
 "Dist_pme240",
 "Dist_pr1392",
