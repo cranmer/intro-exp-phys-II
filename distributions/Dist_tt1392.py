@@ -10,12 +10,12 @@ class Dist_tt1392(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return 1/np.pi * np.cos**{2}x
+		return 1/np.pi * np.cos(x)**2
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.
+		return 0
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 1.9.
+		return 1.9
