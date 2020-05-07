@@ -14,8 +14,8 @@ class Dist_mga357(BaseDistribution):
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 1
+		return 1/(np.e-1)
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 0.50405
+		return 0.079326
