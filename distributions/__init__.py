@@ -50,6 +50,7 @@ from .Dist_sb6187 import Dist_sb6187
 from .Dist_ejt352 import Dist_ejt352
 from .Dist_tt1392 import Dist_tt1392
 from .Dist_jdg577 import Dist_jdg577
+from .Dist_hy1660 import Dist_hy1660
 
 
 __all__ = (
@@ -90,4 +91,5 @@ __all__ = (
 "Dist_ejt352",
 "Dist_tt1392",
 "Dist_jdg577",
+"Dist_hy1660",
 	)
