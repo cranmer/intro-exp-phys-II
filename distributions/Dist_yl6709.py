@@ -1,7 +1,7 @@
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_at4227(BaseDistribution):
+class Dist_yl6709(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1.55088319692
 		self.x_min = -np.pi/2
