@@ -10,7 +10,7 @@ class Dist_ntj221(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return x**4+(7/8)*x**2
+		return (120/59)*x**4+(7/8)*x**2
 
 	def mean(self):
 		"""This is the mean of the PDF"""
