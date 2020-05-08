@@ -5,7 +5,7 @@ class Dist_yl6709(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1.55088319692
 		self.x_min = -np.pi/2
-		self.x_max = np.pi
+		self.x_max = np.pi/2
 
 
 	def pdf(self, x):
