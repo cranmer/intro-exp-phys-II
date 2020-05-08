@@ -1,7 +1,7 @@
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_kc90(BaseDistribution):
+class Dist_rl3781(BaseDistribution):
 	def __init__(self):
 		self.f_max = 0.9340322474
 		self.x_min = -(1+5**(1/2))/2 
