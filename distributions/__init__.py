@@ -59,7 +59,7 @@ __all__ = (
 "Dist_rdm445",
 "Dist_sm6779",
 "Dist_yz4244",
-"Dist_speedreed2"
+"Dist_speedreed2",
 	)
 
 
