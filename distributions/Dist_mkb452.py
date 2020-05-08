@@ -1,22 +1,24 @@
-
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_omr234(BaseDistribution):
+class Dist_mkb452(BaseDistribution):
 	def __init__(self):
-		self.f_max = 2
-		self.x_min = 0
-		self.x_max = 1
+		self.f_max = 13.5
+		self.x_min = 2
+		self.x_max = 2.4
 
 
 	def pdf(self, x):
-		y = 2*x
-		return y
+		"""This is your PDF"""
+		y = (1/0.000022737)
+		return (y*np.exp((np.power(-x,3)))*np.sin(x))
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 1
+		return 2.06619
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(1./6.)
+		return 0.06436
+
+

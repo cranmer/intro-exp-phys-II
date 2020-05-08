@@ -4,6 +4,7 @@ class Dist_ks938(BaseDistribution):
 	def __init__(self):
 		self.x_min = -1
 		self.x_max = 1
+		self.f_max = 1.
 
 
 	def pdf(self, x):
