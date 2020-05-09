@@ -2,6 +2,7 @@
 
 import numpy as np
 from .base_distribution import BaseDistribution
+import math
 
 
 class Dist_yl4874(BaseDistribution):
@@ -13,7 +14,7 @@ class Dist_yl4874(BaseDistribution):
 
 	def pdf(self, x):
 
-		return np.abs(lnx) #normalizing lnx  in bounds 0,1 gives us the function abs(lnx)
+		return np.abs(math.log(x)) #normalizing lnx  in bounds 0,1 gives us the function abs(lnx)
 
 	def mean(self):
 
