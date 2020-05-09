@@ -12,13 +12,11 @@ class Dist_rl3781(BaseDistribution):
 		"""This is your PDF"""
 		return 1.1064101553*np.sin(2**(x))
 
-    def mean(self):
+	def mean(self):
 		"""This is the mean of the PDF"""
 		return -0.6757350573
-
-	
+    
 	def std(self):
 		"""This is the standard deviation of the pdf"""
 		return 0.455796824
-
 
