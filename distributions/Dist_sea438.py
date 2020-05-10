@@ -10,8 +10,8 @@ class Dist_sea438(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		f_x = np.sin(x)+0.5
 		f_x = 0.5*np.sin(x)+0.5
+		Z = -0.5*np.cos(10) + 0.5*10 +0.5*np.cos(0)
 		return f_x/Z
 	
 
