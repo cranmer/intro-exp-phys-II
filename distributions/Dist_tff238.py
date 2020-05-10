@@ -14,8 +14,8 @@ class Dist_tff238(BaseDistribution):
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.249993
+		return 2.1428
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return .35211
+		return .79794
