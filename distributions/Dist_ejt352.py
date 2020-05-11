@@ -12,7 +12,7 @@ class Dist_ejt352(BaseDistribution):
 	def pdf(self, x):
 		"""This is your PDF"""
 		return (x**5)+(7/8)*x**2
-        """This function from 0 to 1 = (11/24)"""
+     #   """This function from 0 to 1 = (11/24)"""
 
 	def mean(self):
 		"""This is the mean of the PDF"""
