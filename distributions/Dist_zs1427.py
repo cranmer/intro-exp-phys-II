@@ -3,7 +3,7 @@ from .base_distribution import BaseDistribution
 
 class Dist_zs1427(BaseDistribution):
 	def __init__(self):
-		self.f_max = 50
+		self.f_max = 4
 		self.x_min = 0
 		self.x_max = 1
 
