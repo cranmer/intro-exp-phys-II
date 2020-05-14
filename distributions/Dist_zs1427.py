@@ -10,13 +10,13 @@ class Dist_zs1427(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return (1/x)
-
+		return 0.25/x
+	
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.98 
+		return 0.245 
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 2.3361
+		return 0.0636
 
