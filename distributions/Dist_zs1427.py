@@ -18,5 +18,5 @@ class Dist_zs1427(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return 0.02667
+		return 2/75
 
