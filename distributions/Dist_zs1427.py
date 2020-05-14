@@ -14,9 +14,9 @@ class Dist_zs1427(BaseDistribution):
 	
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 10 
+		return 0.8
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return -200
+		return 0.02667
 
