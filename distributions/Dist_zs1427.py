@@ -4,13 +4,13 @@ from .base_distribution import BaseDistribution
 class Dist_zs1427(BaseDistribution):
 	def __init__(self):
 		self.f_max = 50
-		self.x_min = -1
+		self.x_min = 0
 		self.x_max = 1
 
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return 25*x**3
+		return 4*x**3
 	
 	def mean(self):
 		"""This is the mean of the PDF"""
