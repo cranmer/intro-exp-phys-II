@@ -9,13 +9,13 @@ class Dist_njg338(BaseDistribution):
 
 
 	def pdf(self, x):
-		#return ((np.cos(x))**2)
-		return 1
+		return ((np.cos(x))**2)
+		#return 1
 
 	def mean(self):
-		#return 0
 		return 0
+		#return 0
 
 	def std(self):
-		#return np.sqrt(((8*((np.pi)**3))+(3*(np.pi)))/3)
-		return np.sqrt((16*((np.pi)**3))/3)
+		return np.sqrt(((8*((np.pi)**3))+(3*(np.pi)))/3)
+		#return np.sqrt((16*((np.pi)**3))/3)
