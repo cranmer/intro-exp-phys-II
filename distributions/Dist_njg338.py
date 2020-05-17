@@ -9,10 +9,10 @@ class Dist_njg338(BaseDistribution):
 
 
 	def pdf(self, x):
-		return np.pi
+		return (np.pi)
 
 	def mean(self):
-		return np.pi
+		return (np.pi)
 
 	def std(self):
 		return np.sqrt(140.78)
