@@ -4,8 +4,8 @@ from .base_distribution import BaseDistribution
 class Dist_njg338(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
-		self.x_min = -6.28
-		self.x_max = 6.28
+		self.x_min = -2*(np.pi)
+		self.x_max = 2*(np.pi)
 
 
 	def pdf(self, x):
@@ -15,4 +15,5 @@ class Dist_njg338(BaseDistribution):
 		return 0
 
 	def std(self):
-		return np.sqrt(((8*(np.pi)*(np.pi)*(np.pi))+(3*(np.pi)))/3)
+		#return np.sqrt(((8*(np.pi)*(np.pi)*(np.pi))+(3*(np.pi)))/3)
+		return 3.7
