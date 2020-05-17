@@ -1,15 +1,9 @@
-
 """
 Collect distributions for demo of central limit theorem.
-
 Add a new file that will return N samples from your distribution similar to example_dist.py.
 Then add the name to the list below.
-
-
 grep class Dist*py | sed 's/(BaseDistribution)://' | sed 's/class //' | sed 's/^Dist/from .Dist/' | sed 's/.py:/ import /'
-
 grep -h class Dist*py | sed 's/(BaseDistribution):/",/' | sed 's/class /"/'
-
 """
 
 from __future__ import absolute_import
@@ -50,7 +44,7 @@ from .Dist_sb6187 import Dist_sb6187
 from .Dist_ejt352 import Dist_ejt352
 from .Dist_tt1392 import Dist_tt1392
 from .Dist_jdg577 import Dist_jdg577
-
+from .Dist_yl4874 import Dist_yl4874
 
 __all__ = (
 "Dist_cmr653",
@@ -90,4 +84,5 @@ __all__ = (
 "Dist_ejt352",
 "Dist_tt1392",
 "Dist_jdg577",
+"DIst_yl4874"
 	)
