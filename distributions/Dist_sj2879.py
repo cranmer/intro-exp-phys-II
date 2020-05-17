@@ -1,22 +1,20 @@
-
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_pr1392(BaseDistribution):
+class Dist_sj2879(BaseDistribution):
 	def __init__(self):
-		self.f_max = 1
-		self.x_min = 0
-		self.x_max = 1
-
+		self.f_max = 0.5
+		self.x_min = -3.0
+		self.x_max = 3.0
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.sin(x)**2
+		return (x**2)/(18) #4x^2 normalized over range of [-3, 3] gives this pdf
 
 	def mean(self):
 		"""This is the mean of the PDF"""
-		return 0.
+		return 0
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt((1/6)((8*(np.pi**2)-3)))
+		return np.sqrt((27)/(5))
