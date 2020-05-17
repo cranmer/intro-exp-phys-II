@@ -91,5 +91,5 @@ __all__ = (
 "Dist_ejt352",
 "Dist_tt1392",
 "Dist_jdg577",
-"Dist_njg338",
+"Dist_njg338"
 	)
