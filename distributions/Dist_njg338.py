@@ -15,4 +15,4 @@ class Dist_njg338(BaseDistribution):
 		return 0
 
 	def std(self):
-		return np.sqrt(8*(np.pi))
+		return np.sqrt(((8*(np.pi)*(np.pi)*(np.pi))+(3*(np.pi)))/3)
