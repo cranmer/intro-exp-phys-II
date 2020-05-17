@@ -1,4 +1,4 @@
-#Yongning Lei (Intro to Experimental Phy Lab II) P = x^4
+#Yongning Lei (Intro to Experimental Phy Lab II) P = 2x
 
 import numpy as np
 from .base_distribution import BaseDistribution
@@ -13,12 +13,12 @@ class Dist_yl4874(BaseDistribution):
 
 	def pdf(self, x):
 
-		return 5*x**4 #normalizing lnx  in bounds 0,1 gives us the function
+		return 2*x #normalizing lnx  in bounds 0,1 gives us the function
 
 	def mean(self):
 
-		return (5/6)  #integral of xf(x) = integral x*abs(lnx) from 0 to 1
+		return 0.609134  #integral of xf(x) = integral 2x**2 from 0 to 1
 
 	def std(self):
 
-		return np.sqrt(5/252) #sqrt variance = sqrt ( integral (x-0.25)^2 f(x))
+		return np.sqrt(1/18) #sqrt variance = sqrt ( integral (x-2/3)^2 f(x))
