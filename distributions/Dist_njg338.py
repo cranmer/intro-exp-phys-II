@@ -4,18 +4,15 @@ from .base_distribution import BaseDistribution
 class Dist_njg338(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
-		self.x_min = -2*(np.pi)
-		self.x_max = 2*(np.pi)
+		self.x_min = 0
+		self.x_max = (np.pi)/2
 
 
 	def pdf(self, x):
-		return ((np.cos(x))**2)
-		#return 1
+		return np.sqrt((np.cos(x))**2)
 
 	def mean(self):
-		return 0
-		#return 0
+		return 0.571
 
 	def std(self):
-		return np.sqrt(((8*((np.pi)**3))+(3*(np.pi)))/3)
-		#return np.sqrt((16*((np.pi)**3))/3)
+		return 0.467
