@@ -15,4 +15,4 @@ class Dist_njg338(BaseDistribution):
 		return np.pi
 
 	def std(self):
-		return np.sqrt(((12*((np.pi)**3))+(16*(np.pi)))/3)
+		return np.sqrt(140.78)
