@@ -12,7 +12,7 @@ class Dist_njg338(BaseDistribution):
 		return np.sqrt((np.cos(x))**2)
 
 	def mean(self):
-		return 0.571
+		return 0.5708
 
 	def std(self):
-		return np.sqrt(0.142)
+		return np.sqrt(0.1416)
