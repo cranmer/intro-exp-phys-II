@@ -15,4 +15,4 @@ class Dist_njg338(BaseDistribution):
 		return 0.571
 
 	def std(self):
-		return 0.467
+		return sqrt(0.142)
