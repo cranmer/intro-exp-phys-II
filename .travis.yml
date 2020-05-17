@@ -1,0 +1,25 @@
+language: python
+
+#adapted from http://pdebuyl.be/blog/2018/travis-numpy-pip.html
+
+python:
+ - 3.6
+
+env:
+  - NUMPY_VERSION=1.18.1
+
+#matrix:
+#  exclude:
+#    - python: 3.6
+#      env: NUMPY_VERSION=1.11.0
+
+
+script:
+  - virtualenv --python=python venv
+  - source venv/bin/activate
+  - python -m pip install -U pip
+  - pip install -U wheel
+  - pip install numpy==$NUMPY_VERSION
+  - pip install pytest
+#  - python setup.py build
+  - python -m pytest

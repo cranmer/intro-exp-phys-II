@@ -1,7 +1,7 @@
 import numpy as np
 from .base_distribution import BaseDistribution
 
-class Dist_kc90(BaseDistribution):
+class Dist_kc90_4(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
 		self.x_min = -1
