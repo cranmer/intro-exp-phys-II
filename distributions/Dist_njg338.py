@@ -9,7 +9,7 @@ class Dist_njg338(BaseDistribution):
 
 
 	def pdf(self, x):
-		return np.cos(x)
+		return ((np.cos(x))*(np.cos(x)))
 
 	def mean(self):
 		return 0
