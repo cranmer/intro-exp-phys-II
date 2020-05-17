@@ -1,12 +1,11 @@
 import numpy as np
-import distributions
-from distributions.base_distribution import BaseDistribution
+from .base_distribution import BaseDistribution
 
 class Dist_njg338(BaseDistribution):
 	def __init__(self):
 		self.f_max = 1
-		self.x_min = -2*pi
-		self.x_max = 2*pi
+		self.x_min = -2*(np.pi)
+		self.x_max = 2*(np.pi)
 
 
 	def pdf(self, x):
