@@ -6,7 +6,7 @@ from .base_distribution import BaseDistribution
 
 class Dist_yl4874(BaseDistribution):
 	def __init__(self):
-		self.f_max = 1
+		self.f_max = 2
 		self.x_min = 0
 		self.x_max = 1
 
