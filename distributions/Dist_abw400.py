@@ -10,7 +10,7 @@ class Dist_abw400(BaseDistribution):
 
 	def pdf(self, x):
 		"""This is your PDF"""
-		return np.sqrt(x)/(2/3)
+		return np.sqrt(x)/(2./3)
 
 	def mean(self):
 		"""This is the mean of the PDF"""
@@ -18,4 +18,4 @@ class Dist_abw400(BaseDistribution):
 
 	def std(self):
 		"""This is the standard deviation of the pdf"""
-		return np.sqrt(12/175)
+		return np.sqrt(12./175)
